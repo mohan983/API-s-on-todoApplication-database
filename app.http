@@ -1,0 +1,52 @@
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 6,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-02-22"
+}
+###
+
+PUT http://localhost:3000/todos/3/
+Content-Type: application/json
+
+{
+  "status": "DONE"
+}
+###
+
+PUT http://localhost:3000/todos/3/
+Content-Type: application/json
+
+{
+  "priority": "HIGH"
+}
+###
+
+PUT http://localhost:3000/todos/3/
+Content-Type: application/json
+
+{
+  "todo": "Clean the garden"
+}
+###
+
+PUT http://localhost:3000/todos/3/
+Content-Type: application/json
+
+{
+  "category": "LEARNING"
+}
+###
+
+PUT http://localhost:3000/todos/3/
+Content-Type: application/json
+
+{
+  "dueDate": "2021-01-12"
+}
+###
