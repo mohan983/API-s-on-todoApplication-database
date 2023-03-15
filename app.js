@@ -142,7 +142,7 @@ app.get("/todos/", async (request, response) => {
     AND category = '${category}'
     AND priority = '${priority}';`;
       break;
-    case hasCategoryProperties(request.query):
+    case hasCategoryProperty(request.query):
       getTodosQuery = `
    SELECT
      id,todo,category,priority,status,due_date AS dueDate
